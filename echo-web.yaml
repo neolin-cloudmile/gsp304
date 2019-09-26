@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: echo-web
+  labels:
+    app: echo-web
+spec:
+  containers:
+  - name: echo-web 
+    image: gcr.io/qwiklabs-gcp-ff20e9c26f941969/echo-app:v1
+    ports:
+    - containerPort: 8000
